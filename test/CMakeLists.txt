@@ -1,0 +1,19 @@
+add_executable(logtest Logger_test.cc)
+target_link_libraries(logtest tinynet_base)
+
+add_executable(EventLoop_test EventLoop_unittest.cc)
+target_link_libraries(EventLoop_test tinynet_base tinynet_net)
+
+add_executable(EventLoopThread_test EventLoopThread_unittest.cc)
+target_link_libraries(EventLoopThread_test tinynet_base tinynet_net)
+
+add_executable(EventLoopThreadPool_test EventLoopThreadPool_unittest.cc)
+target_link_libraries(EventLoopThreadPool_test tinynet_base tinynet_net)
+
+add_executable(EchoServer_test EchoServer_unittest.cc)
+target_link_libraries(EchoServer_test tinynet_base tinynet_net)
+
+add_executable(EchoClient_test EchoClient_unittest.cc)
+target_link_libraries(EchoClient_test tinynet_base tinynet_net)
+
+

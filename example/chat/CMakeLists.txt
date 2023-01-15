@@ -1,0 +1,5 @@
+add_executable(chat_server chatserver.cc)
+target_link_libraries(chat_server tinynet_base tinynet_net)
+
+add_executable(chat_client chatclient.cc)
+target_link_libraries(chat_client tinynet_base tinynet_net)
