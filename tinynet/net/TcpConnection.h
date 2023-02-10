@@ -13,6 +13,7 @@
 #include <tinynet/net/Socket.h>
 #include <tinynet/net/Callbacks.h>
 #include <tinynet/net/Buffer.h>
+#include <any>
 
 struct tcp_info;
 
@@ -73,6 +74,13 @@ class TcpConnection : noncopyable,
   void connectEstablished();  
   void connectDestroyed();  
 
+  void setContext(const std::any& context)
+  { context_ = context; }
+  const std::any& getContext() const
+  { return context_; }
+  std::any* getMutableContext()
+  { return &context_; }
+
  private:                             
   void handleRead(Timestamp receiveTime); 
   void handleWrite();
@@ -101,7 +109,8 @@ class TcpConnection : noncopyable,
   MessageCallback messageCallback_;             
   WriteCompleteCallback writeCompleteCallback_;  
   HighWaterMarkCallback highWaterMarkCallback_;  
-  CloseCallback closeCallback_;                                     
+  CloseCallback closeCallback_;
+  std::any context_;                                    
 };
 
 }  // namespace net

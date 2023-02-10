@@ -18,7 +18,7 @@ set(CXX_FLAGS
     -Wshadow
     -Wwrite-strings
     -march=native
-    -std=c++14
+    -std=c++17
     -rdynamic)
 string(REPLACE ";" " " CMAKE_CXX_FLAGS "${CXX_FLAGS}")
 
@@ -28,5 +28,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 include_directories(${PROJECT_SOURCE_DIR})
 add_subdirectory(tinynet/base)
 add_subdirectory(tinynet/net)
-add_subdirectory(test)
-add_subdirectory(example/chat)
+# add_subdirectory(test)
+# add_subdirectory(example/chat)
+add_subdirectory(example/webserver)
