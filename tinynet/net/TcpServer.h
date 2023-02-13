@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-07
+// Date         : 2022-09
 //
 #ifndef TINYNET_NET_TCPSERVER_H_
 #define TINYNET_NET_TCPSERVER_H_
@@ -66,7 +66,6 @@ class TcpServer : noncopyable
   std::atomic_bool started_;
   int nextConnId_;
   ConnectionMap connMap_;
-  // int connnectionNum_;
 };
 } // namespace net
 } // namespace tinynet

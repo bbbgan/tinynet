@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-02
+// Date         : 2022-09
 // 
 #include <assert.h>
 #include <stdio.h>
@@ -24,7 +24,7 @@ int main() {
   assert(EventLoop::getEventLoopOfCurrentThread() == &loop);
 
   std::thread thread(anotherLoop);
-  auto every = loop.runEvery(1s, []() { LOG_INFO("run every 1s"); });
+  auto every = loop.runEvery(1s, []() { });
   loop.runAfter(5s, [&]() {
     LOG_INFO("cancel the every event");
     loop.cancel(every);

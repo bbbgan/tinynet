@@ -1,3 +1,7 @@
+// 
+// Author       : gan
+// Date         : 2022-09
+//
 #ifndef TINYNET_EXAMPLE_CHAT_CODEC_H_
 #define TINYNET_EXAMPLE_CHAT_CODEC_H_
 

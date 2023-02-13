@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-03
+// Date         : 2022-09
 //
 #ifndef TINYNET_NET_EVENTLOOPTHREAD_H_
 #define TINYNET_NET_EVENTLOOPTHREAD_H_
@@ -25,7 +25,7 @@ class EventLoopThread : noncopyable
   EventLoop* startLoop();
  private:
   void threadFunc();
-  // this var is the stack var in threadFunc
+  // this value is the stack value in threadFunc
   EventLoop* loop_; 
   bool started_;
   ThreadInitCallback callback_;

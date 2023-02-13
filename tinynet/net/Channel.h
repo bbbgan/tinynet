@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-08-27
+// Date         : 2022-08
 // 
 #ifndef TINYNET_NET_CHANNEL_H_
 #define TINYNET_NET_CHANNEL_H_

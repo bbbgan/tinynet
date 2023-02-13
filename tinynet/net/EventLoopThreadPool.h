@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-04
+// Date         : 2022-09
 //
 #ifndef TINYNET_NET_EVENTLOOPTHREADPOOL_H_
 #define TINYNET_NET_EVENTLOOPTHREADPOOL_H_
@@ -32,6 +32,7 @@ class EventLoopThreadPool : noncopyable
   bool started_; 
   int numThreads_; 
   int next_;
+  // prevent the dtor of the loop
   std::vector<std::unique_ptr<EventLoopThread>> threads_;
   std::vector<EventLoop*> loops_;  
 };

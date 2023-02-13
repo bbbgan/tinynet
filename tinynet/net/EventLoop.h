@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-02
+// Date         : 2022-09
 // 
 #ifndef TINYNET_NET_EVENTLOOP_H_
 #define TINYNET_NET_EVENTLOOP_H_
@@ -71,7 +71,7 @@ class EventLoop : noncopyable
   std::unique_ptr<Channel> wakeupChannel_;
   Poller::ChannelList activeChannels_;  
   std::mutex mutex_;
-  std::vector<Task> pendingTasks_; // guarded by mutex_
+  std::vector<Task> pendingTasks_; 
 };
 
 } // namespace net

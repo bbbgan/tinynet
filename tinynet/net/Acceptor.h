@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-01
+// Date         : 2022-09
 // 
 #ifndef TINYNET_NET_ACCEPTOR_H_
 #define TINYNET_NET_ACCEPTOR_H_
