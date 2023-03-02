@@ -14,7 +14,7 @@
 
 + 使用C++11标准线程库，而不是封装的POSIX thread API。
 
-+ 使用C print风格的日志
++ 使用C print风格的异步以及同步日志
 
 + 内置简陋的HTTP服务器例程
 
@@ -27,11 +27,11 @@ $ cd tinynet && ./build.sh
 
 ## *More*
 
-
+关于更多项目细节移步[bblog](https://bbbgan.github.io/)
 
 ## *TODO*
 
-+ 高性能异步日志
++ 异步日志性能优化
 + HTTP服务器测试
 + RPC框架
 
