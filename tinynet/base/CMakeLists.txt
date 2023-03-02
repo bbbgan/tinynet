@@ -1,5 +1,7 @@
 set(base_SourceFile
   Logger.cc
+  LogFile.cc
+  AsyncLogger.cc
   )
 
 add_library(tinynet_base ${base_SourceFile})

@@ -16,4 +16,6 @@ target_link_libraries(EchoServer_test tinynet_base tinynet_net)
 add_executable(EchoClient_test EchoClient_unittest.cc)
 target_link_libraries(EchoClient_test tinynet_base tinynet_net)
 
+add_executable(asyncLog_test AsyncLogger_test.cc)
+target_link_libraries(asyncLog_test tinynet_base pthread)
 

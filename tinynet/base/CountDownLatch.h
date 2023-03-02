@@ -19,6 +19,7 @@ class CountDownLatch : noncopyable
   void wait() {
     std::unique_lock<std::mutex> lk(mutex_);
     while (count_ > 0) {
+      // FIXME : fake wake up
       cond_.wait(lk);
     }
   }

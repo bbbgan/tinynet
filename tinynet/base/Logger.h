@@ -103,7 +103,7 @@ class Logger {
   ~Logger();
   static void setLogLevel(LogLevel level) { glevel_ = level; }
   static LogLevel getLogLevel() { return glevel_;}
-  static void setOutput(OutputFunc& func) { goutput_ = func; }
+  static void setOutput(const OutputFunc& func) { goutput_ = func; }
   static void setFlush(FlushFunc& func) { gflush_ = func; } 
   
  private:

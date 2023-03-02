@@ -24,7 +24,7 @@ EventLoop* EventLoopThread::startLoop() {
   assert(!started_);
   started_ = true;
   assert(loop_ == nullptr);
-  thread_ = std::thread([this]() { threadFunc(); });
+  thread_ = std::thread([this]() { this->threadFunc(); });
   latch_.wait();
   assert(loop_ != nullptr);
   return loop_;
