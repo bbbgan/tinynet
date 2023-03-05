@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-09-01
+// Date         : 2022-09
 // 
 #ifndef TINYNET_BASE_COUNTDOWNLATCH_H_
 #define TINYNET_BASE_COUNTDOWNLATCH_H_

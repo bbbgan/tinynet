@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-08-23
+// Date         : 2022-08
 // 
 #ifndef NONCOPYABLE_H_
 #define NONCOPYABLE_H_

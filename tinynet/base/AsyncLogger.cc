@@ -1,3 +1,7 @@
+// 
+// Author       : gan
+// Date         : 2022-12
+// 
 #include <tinynet/base/AsyncLogger.h>
 #include <tinynet/base/LogFile.h>
 

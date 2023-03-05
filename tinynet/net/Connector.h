@@ -1,10 +1,10 @@
-#ifndef TINYNET_NET_CONNECTOR_H_
-#define TINYNET_NET_CONNECTOR_H_
-#include <memory>
 // 
 // Author       : gan
 // Date         : 2022-09-10
 //
+#ifndef TINYNET_NET_CONNECTOR_H_
+#define TINYNET_NET_CONNECTOR_H_
+#include <memory>
 #include <functional>
 
 #include <tinynet/base/noncopyable.h>

@@ -1,3 +1,7 @@
+// 
+// Author       : gan
+// Date         : 2022-12
+// 
 #ifndef TINYNET_BASE_ASYNCLOGGER_H_
 #define TINYNET_BASE_ASYNCLOGGER_H_
 

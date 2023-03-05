@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2023-02
+// Date         : 2022-12
 // 
 #include <tinynet/base/AsyncLogger.h>
 #include <tinynet/base/Logger.h>
@@ -18,9 +18,6 @@ void asyncOutput(const char* msg, int len) {
   gAsyncLog->append(msg, len);
 }
 
-void bench() {
-  
-}
 int main(int argc, char* argv[]) {
   printf("pid = %d\n", getpid());
   AsyncLogger log("tinynet_asynclog");
@@ -29,8 +26,9 @@ int main(int argc, char* argv[]) {
   gAsyncLog = &log;
   Logger::setLogLevel(Logger::LogLevel::TRACE);
   Logger::setOutput(asyncOutput);
-  const char* buf = "Hello 0123456789  abcdefghijklmnopqrstuvwxyz";
-
+  // string longstr = "Hello 0123456789  abcdefghijklmnopqrstuvwxyz" + string(3000, 'X');
+  string longstr = "Hello 0123456789  abcdefghijklmnopqrstuvwxyz";
+  const char* buf = longstr.c_str();
   timeval t_start, t_end;
   gettimeofday(&t_start, NULL);
 

@@ -1,6 +1,6 @@
 // 
 // Author       : gan
-// Date         : 2022-08-23
+// Date         : 2022-08
 // 
 #ifndef TINYNET_BASE_TIMESTAMP_H_
 #define TINYNET_BASE_TIMESTAMP_H_
