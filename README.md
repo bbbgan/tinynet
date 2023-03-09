@@ -1,6 +1,6 @@
 ## *Introduce*
 
-​	**tinynet**是一个基于**Reactor**模型的多线程C++网络库，仿照[Muduo](https://github.com/chenshuo/muduo)[网络库进行编写：
+​	**tinynet**是一个基于**Reactor**模式的多线程C++网络库，仿照[Muduo](https://github.com/chenshuo/muduo)网络库进行编写：
 
 + 使用std::chrono代替封装的底层时间类，可以更方便的使用各种时间单位， e.g.
 
