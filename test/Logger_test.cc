@@ -4,6 +4,7 @@
 // 
 #include <tinynet/base/Logger.h>
 #include <sys/time.h>
+#include <cstdio>
 
 using namespace tinynet;
 int main() {
