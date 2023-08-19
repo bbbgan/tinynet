@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
 project(tinynet CXX)
 
+set(CMAKE_CXX_COMPILER "/usr/bin/g++-10")
+
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Release")
 endif()
